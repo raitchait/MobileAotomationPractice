@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suite for ebay">
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <parameter name="version" value="9"/>
+
+    <test name="Ebay page" preserve-order="true">
+        <classes>
+             <class name="regressionEbaTest.EbayAccountTest"/>
+                     <class name="regressionEbaTest.EbayCategoriesTest"/>
+            <class name="regressionEbaTest.EbayHomePageTest"/>
+
+           <!-- <class name="regressionEbaTest.MobileAPITest"/>-->
+
+
+
+        </classes>
+    </test>
+</suite>
